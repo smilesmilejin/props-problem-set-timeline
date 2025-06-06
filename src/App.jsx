@@ -14,7 +14,17 @@ function App() {
   console.log('The value of timelineData is', timelineData);
   console.log('We should use timelineData in our project somehow...');
 
-  return <div></div>;
+  // console.log('The value of timelineData.events is', timelineData.events);
+  return (
+    // <div>
+    //   <Timeline timeline={timelineData.events}></Timeline>
+    // </div>
+      <section className="App-main">
+      <h1 className="App-header App-title">Ada Lovelace&apos;s Social Media Feed</h1>
+      {/* The key will be timelinedata when passed into TimeLine */}
+      <Timeline timelinedata={timelineData}></Timeline>
+    </section>
+  );
 }
 
 export default App;
